@@ -1,0 +1,318 @@
+* {
+    /* outline: 1px solid #000; */
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.wapper {
+    width: 1024px;
+    margin: auto;
+    border: 1px solid #EAF0ED;
+}
+
+/* header */
+
+.header {
+    width: 940px;
+    padding: 30px 42px 30px 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+img#logo {
+    width: 220px;
+    height: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header>a {
+    width: 220px;
+    height: 40px;
+}
+
+.nav {
+    height: 22px;
+    display: flex;
+
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav .item {
+    display: flex;
+    font-family: 微軟正黑體;
+}
+
+/* nav 文字設定 */
+.nav .item a {
+    margin-left: 60px;
+    font-size: 16px;
+    color: #3F5D45;
+    font-weight: 800;
+}
+
+
+.nav li>a>img {
+    display: block;
+}
+
+.nav .car {
+    margin-left: 80px;
+}
+
+/* content */
+
+.content {
+    padding: 0 42px;
+    font-family: 微軟正黑體;
+}
+
+.pic_content {
+    height: 496px;
+    /* background: cover; 「不變形」、「寬高等比例」、「在必要時局部裁切」*/
+    background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/banner.png);
+    background-size: cover;
+
+    margin-bottom: 60px;
+}
+
+
+
+.content .menu {
+    display: flex;
+}
+
+
+.sidebar .item {
+    width: 300px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text */
+    font-size: 24px;
+    color: #3F5D45;
+    font-weight: 600;
+
+    /* border */
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+
+}
+
+.sidebar .selected {
+    background: #EAF0ED;
+}
+
+.sidebar .item.title {
+    background: #3F5D45;
+
+    color: #EAF0ED;
+}
+
+
+
+/* card */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    height: 436px;
+    margin-bottom: 20px;
+}
+
+
+.card1 .banner {
+    background: url(https://bit.ly/2QiWeQW) center;
+}
+
+
+.card2 .banner {
+    background: url(https://bit.ly/2zBjQuq) center;
+
+}
+
+
+.card3 .banner {
+    background: url(https://bit.ly/2zKOP7w) center;
+}
+
+
+.card4 .banner {
+    background: url(https://bit.ly/2NcDVuB) center;
+}
+
+
+.card5 .banner {
+    background: url(https://bit.ly/2zBDAxX) center;
+}
+
+
+.card6 .banner {
+    background: url(https://bit.ly/2zL5jN7) center;
+}
+
+
+.card .banner {
+    background-size: cover;
+    height: 315px;
+    position: relative;
+    /* display: flex; */
+}
+
+.card .text_banner {
+    position: absolute;
+    width: 36px;
+    height: 106px;
+    background-color: #3F5D45;
+    left: 20px;
+
+    /* text */
+    color: #EAF0ED;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    line-height: 36px;
+    letter-spacing: 2px;
+}
+
+.card .item {
+    /* height: 56px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    color: #3F5D45;
+    font-size: 20px;
+
+
+}
+
+.card a {
+
+    font-size: 24px;
+    color: #3F5D45;
+    background-color: #EAF0ED;
+    text-align: center;
+}
+
+.item .name {
+    width: 173px;
+    font-weight: 300;
+    height: 56px;
+    line-height: 56px;
+    /* 當DIV區塊的高度等同於文字行高的，文字就會被放在中間。 */
+
+    border-left: 1px solid #EAF0ED;
+}
+
+.item .price {
+    width: 127px;
+    font-weight: 600;
+    height: 56px;
+    line-height: 56px;
+
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+
+
+}
+
+
+a.btn {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a .btn_buy {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+.content .pagenumber {
+    height: 60px;
+    margin-bottom: 60px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+
+a.btn_pagenumber {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+
+.btn_pagenumber.number {
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    color: #3F5D45;
+}
+
+
+.btn_pagenumber.number.selected {
+    background-color: #3F5D45;
+
+    /* text */
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    color: #EAF0ED;
+}
+
+/* pagenumber.border */
+.btn_pagenumber.number,
+.btn_pagenumber.icon_left {
+    border-top: 1px solid #EAF0ED;
+    border-left: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+}
+
+.btn_pagenumber.icon_right {
+    border: 1px solid #EAF0ED;
+    ;
+}
+
+
+.btn_pagenumber a {
+    /* position: relative; */
+}
+
+
+.btn_pagenumber img {
+    /* position: absolute; */
+    width: 24px;
+    height: 24px;
+    margin: 18px;
+
+}
